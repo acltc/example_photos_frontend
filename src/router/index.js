@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import PhotosIndex from "../views/PhotosIndex.vue";
+import PhotosNew from "../views/PhotosNew.vue";
 
 Vue.use(VueRouter);
 
@@ -23,6 +24,11 @@ const routes = [
     path: "/photos",
     name: "photos-index",
     component: PhotosIndex,
+  },
+  {
+    path: "/photos/new",
+    name: "photos-new",
+    component: PhotosNew,
   },
 ];
 
